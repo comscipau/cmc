@@ -137,7 +137,7 @@ const Membership = () => {
       <p className="text-justWhite font-spacegrotesk font-medium text-[3.5rem] text-center mt-[4.63rem]">
         WHY MINT?
       </p>
-      <div className="flex justify-around items-center pb-8 mt-9">
+      <div className="flex justify-around items-center pb-[12.5rem] mt-9">
         <p className="font-inter font-light text-base text-gold">
           Exclusive members only games
         </p>

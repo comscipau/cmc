@@ -7,10 +7,12 @@ module.exports = {
         gold: "#FFB145",
         justWhite: "#FFFFFF",
         justBlack: "#000000",
+        footerColor: "#505050",
       },
       backgroundImage: {
         hero_bg: "url('/src/assets/hero_bg.png')",
         gradient_bg: "url('/src/assets/gradient-bg.png')",
+        gradient_footer: "url('/src/assets/gradient-footer.png')",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
