@@ -16,3 +16,13 @@
   font-family: "SpaceGrotesk";
   src: url("./fonts/SpaceGrotesk-Regular.ttf");
 }
+
+.radial-btn:hover {
+  background: radial-gradient(
+    196.58% 176.21% at 50% 50%,
+    rgba(255, 177, 69, 0) 0%,
+    #ffb145 100%
+  );
+  border: 1px solid #ffb145;
+  font-weight: 400;
+}
