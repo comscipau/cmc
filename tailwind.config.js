@@ -8,6 +8,7 @@ module.exports = {
         justWhite: "#FFFFFF",
         justBlack: "#000000",
         footerColor: "#505050",
+        darkTexts: "#141112",
       },
       backgroundImage: {
         hero_bg: "url('/src/assets/hero_bg.png')",

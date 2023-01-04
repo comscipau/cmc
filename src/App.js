@@ -1,3 +1,4 @@
+import Collaborations from "./components/Collaborations";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Membership from "./components/Membership";
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <Membership />
+      <Collaborations />
       <Footer />
     </div>
   );
