@@ -122,23 +122,24 @@ const Membership = () => {
         </motion.p>
 
         <motion.p
-          className="font-inter text-base leading-8 text-justWhite text-center mt-8 pb-[7.81rem]"
+          className="font-inter text-base font-normal leading-8 text-justWhite text-center mt-8 pb-[7.81rem]"
           variants={fadeInToUp}
           // initial="hidden"
           // whileInView="visible"
           // viewport={{ once: true }}
         >
-          Each of the tiers of memberships has the following benefits: <br />
-          Access to dedicated community channels by tier, community games and
-          activities. Access to affiliate network discounts and brands.
-          <br /> Monthly airdrop of passive rewards from web3 and affiliated
-          partnerships, Super cool NFT that can be traded or sold on the open
-          market.
+          Each of the tiers of memberships has the following benefits:
+          <br />
+          • Access to dedicated community channels by tier • Community games and
+          activities • Access to affiliate network discounts and brands
+          <br /> • Monthly airdrop of passive rewards from web3 and affiliated
+          partnerships • Super cool NFT that can be traded or sold on the open
+          market
         </motion.p>
       </motion.div>
 
       <motion.div
-        className="flex justify-between relative mb-[4rem] z-[10]"
+        className="flex justify-between relative mb-6 z-[10]"
         variants={mainContainer}
         initial="hidden"
         whileInView="visible"
@@ -157,13 +158,19 @@ const Membership = () => {
               ></polyline>
             </svg> */}
           </div>
-          <p className="pt-2 text-base italic font-light font-inter">
+          <p className="py-2 text-base italic font-light font-inter">
             Supply: 1,000
             <br />
             Price: FREE
             <br />
             Utility: Access to free roll Poker tournaments
           </p>
+          <a
+            href="/"
+            className="text-base italic font-medium font-inter leading-8 underline"
+          >
+            Mint Silver Card NFT
+          </a>
         </motion.div>
         <motion.div
           className="w-[470px] border-t border-white ml-4 mt-10 absolute left-[21rem]"
@@ -175,7 +182,7 @@ const Membership = () => {
       </motion.div>
 
       <motion.div
-        className="flex justify-between relative mb-[4rem] z-[9]"
+        className="flex justify-between relative mb-6 z-[9]"
         variants={mainContainer}
         initial="hidden"
         whileInView="visible"
@@ -187,7 +194,7 @@ const Membership = () => {
               <span className="text-[#FDBA5D]">GOLD</span> CARD
             </p>
           </div>
-          <p className="pt-2 text-base italic font-light font-inter">
+          <p className="py-2 text-base italic font-light font-inter">
             Supply: 5,000 <br />
             Price: $160.00
             <br />
@@ -196,6 +203,12 @@ const Membership = () => {
             <br />
             split amongst Gold card members, and Discounts on NFT Mints.
           </p>
+          <a
+            href="/"
+            className="text-base italic font-medium font-inter leading-8 underline"
+          >
+            Mint Gold Card NFT
+          </a>
         </motion.div>
         <motion.div
           className="w-[450px] border-t border-white ml-4 mt-10 absolute left-[19rem]"
@@ -207,7 +220,7 @@ const Membership = () => {
       </motion.div>
 
       <motion.div
-        className="flex justify-between relative mb-[4rem] z-[8]"
+        className="flex justify-between relative mb-6 z-[8]"
         variants={mainContainer}
         initial="hidden"
         whileInView="visible"
@@ -219,7 +232,7 @@ const Membership = () => {
               <span className="text-[#1A569A]">DIAMOND</span> CARD
             </p>
           </div>
-          <p className="pt-2 text-base italic font-light font-inter">
+          <p className="py-2 text-base italic font-light font-inter">
             Supply: 500 <br />
             Price: $800.00
             <br />
@@ -228,6 +241,12 @@ const Membership = () => {
             <br />
             split amongst Diamond card members, and Discounts on NFT Mints.
           </p>
+          <a
+            href="/"
+            className="text-base italic font-medium font-inter leading-8 underline"
+          >
+            Mint Diamond Card NFT
+          </a>
         </motion.div>
         <motion.div
           className="w-[300px] border-t border-white ml-4 mt-10 absolute left-[25.5rem]"
@@ -242,7 +261,7 @@ const Membership = () => {
       </motion.div>
 
       <motion.div
-        className="flex justify-between relative mb-[4rem] z-[7]"
+        className="flex justify-between relative mb-6 z-[7]"
         variants={mainContainer}
         initial="hidden"
         whileInView="visible"
@@ -254,7 +273,7 @@ const Membership = () => {
               <span className="text-[#505050]">BLACK</span> CARD
             </p>
           </div>
-          <p className="pt-2 text-base italic font-light font-inter">
+          <p className="py-2 text-base italic font-light font-inter">
             Supply: 100
             <br />
             Price: $2,000.00 <br />
@@ -262,6 +281,12 @@ const Membership = () => {
             profit
             <br /> split amongst Black card members. and Discounts on NFT Mints.
           </p>
+          <a
+            href="/"
+            className="text-base italic font-medium font-inter leading-8 underline"
+          >
+            Mint Black Card NFT
+          </a>
         </motion.div>
         <motion.div
           className="w-[430px] border-t border-white ml-4 mt-10 absolute left-[21rem]"
@@ -288,15 +313,21 @@ const Membership = () => {
               <span className="text-[#7D4BB9]">APEX</span> CARD
             </p>
           </div>
-          <p className="pt-2 text-base italic font-light font-inter">
-            Supply: 5,000 <br />
-            Price: $160.00
+          <p className="py-2 text-base italic font-light font-inter">
+            Supply: 20 <br />
+            Price: $5,000.00
             <br />
             Utility: Access to free roll Poker tournaments, 25% of House’s
             profit
             <br />
-            split amongst gold card members. Discounts on NFT Mints.
+            split amongst apex card members. Discounts on NFT Mints.
           </p>
+          <a
+            href="/"
+            className="text-base italic font-medium font-inter leading-8 underline"
+          >
+            Mint Apex Card NFT
+          </a>
         </motion.div>
         <motion.div
           className="w-[500px] border-t border-white ml-4 mt-10 absolute left-[19rem]"

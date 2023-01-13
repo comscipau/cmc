@@ -10,7 +10,7 @@ const Footer = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 1,
+        delay: 3,
         duration: 1,
         when: "beforeChildren",
         staggerChildren: 1,
@@ -42,7 +42,7 @@ const Footer = () => {
         delay: 2,
         duration: 0.5,
         when: "beforeChildren",
-        staggerChildren: 1,
+        staggerChildren: 0.5,
       },
     },
   };
@@ -133,16 +133,16 @@ const Footer = () => {
           <p className="pb-[2.625rem] font-spacegrotesk text-base font-medium">
             COMPANY
           </p>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             About Us
           </a>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Collabs
           </a>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Announcements
           </a>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Keep in touch
           </a>
         </motion.div>
@@ -154,13 +154,13 @@ const Footer = () => {
           <p className="pb-[2.625rem] font-spacegrotesk text-base font-medium">
             PRODUCTS
           </p>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Gold Membership Card
           </a>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Club Membership Card NFT
           </a>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Club Sharks NFT
           </a>
         </motion.div>
@@ -172,16 +172,16 @@ const Footer = () => {
           <p className="pb-[2.625rem] font-spacegrotesk text-base font-medium">
             SOCIALS
           </p>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Twitter
           </a>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Discord
           </a>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Telegram
           </a>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Youtube
           </a>
         </motion.div>
@@ -193,16 +193,16 @@ const Footer = () => {
           <p className="pb-[2.625rem] font-spacegrotesk text-base font-medium">
             SUPPORT
           </p>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Disclaimer
           </a>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Privacy Policy
           </a>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Medium Articles
           </a>
-          <a href="#" className="pb-3 font-inter text-xs">
+          <a href="/" className="pb-3 font-inter text-xs">
             Whitepaper
           </a>
         </motion.div>

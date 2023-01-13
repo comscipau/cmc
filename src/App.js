@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <Membership />
-      <Collaborations />
+      {/* <Collaborations /> */}
       <Footer />
     </div>
   );
