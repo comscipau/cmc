@@ -94,7 +94,7 @@ const Membership = () => {
   };
 
   return (
-    <div className="w-full pt-12 px-[8.81rem] bg-gradient_bg bg-cover">
+    <div className="w-full lg:pt-12 px-6 lg:px-[8.81rem] bg-gradient_bg_mobile lg:bg-gradient_bg bg-cover md:bg-top">
       <motion.div
         variants={cardsContainer}
         initial="hidden"
@@ -102,7 +102,7 @@ const Membership = () => {
         viewport={{ once: true }}
       >
         <motion.p
-          className="font-spacegrotesk font-medium text-[4rem] text-white leading-none text-center"
+          className="font-spacegrotesk font-medium text-2xl lg:text-[4rem] text-white leading-none text-center mb-2 lg:mb-0"
           variants={fadeInToUp}
           // initial="hidden"
           // whileInView="visible"
@@ -112,7 +112,7 @@ const Membership = () => {
         </motion.p>
         {/* <br /> */}
         <motion.p
-          className="font-spacegrotesk font-medium text-[4rem] text-gold leading-none text-center"
+          className="font-spacegrotesk font-medium text-[2rem] lg:text-[4rem] text-gold leading-none text-center"
           variants={fadeInToUp}
           // initial="hidden"
           // whileInView="visible"
@@ -122,7 +122,7 @@ const Membership = () => {
         </motion.p>
 
         <motion.p
-          className="font-inter text-base font-normal leading-8 text-justWhite text-center mt-8 pb-[7.81rem]"
+          className="font-inter text-base font-normal leading-8 text-justWhite text-center mt-8 pb-[7.81rem] hidden lg:block"
           variants={fadeInToUp}
           // initial="hidden"
           // whileInView="visible"
@@ -139,15 +139,18 @@ const Membership = () => {
       </motion.div>
 
       <motion.div
-        className="flex justify-between relative mb-6 z-[10]"
+        className="flex flex-col-reverse lg:flex-row justify-between relative mb-10 lg:mb-6 z-[10] mt-[3.9375rem] lg:mt-0"
         variants={mainContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         <motion.div className="text-justWhite" variants={fadeToRight}>
-          <div className="flex items-center">
-            <p className="font-spacegrotesk font-medium text-[3.5rem]">
+          <div className="flex items-center justify-center lg:justify-start">
+            <p className="font-spacegrotesk font-medium text-[3.5rem] hidden lg:block">
+              <span className="text-[#D7D7D7]">SILVER</span> CARD
+            </p>
+            <p className="font-spacegrotesk font-medium text-[3rem] block lg:hidden">
               <span className="text-[#D7D7D7]">SILVER</span> CARD
             </p>
 
@@ -158,43 +161,48 @@ const Membership = () => {
               ></polyline>
             </svg> */}
           </div>
-          <p className="py-2 text-base italic font-light font-inter">
+          <p className="py-2 text-base italic font-light font-inter text-center lg:text-left">
             Supply: 1,000
             <br />
             Price: FREE
             <br />
             Utility: Access to free roll Poker tournaments
           </p>
-          <a
-            href="/"
-            className="text-base italic font-medium font-inter leading-8 underline"
-          >
-            Mint Silver Card NFT
-          </a>
+          <div className="flex justify-center lg:justify-start">
+            <a
+              href="/"
+              className="text-base italic font-medium font-inter leading-8 underline"
+            >
+              Mint Silver Card NFT
+            </a>
+          </div>
         </motion.div>
         <motion.div
-          className="w-[470px] border-t border-white ml-4 mt-10 absolute left-[21rem]"
+          className="w-[470px] border-t border-white ml-4 mt-10 absolute left-[21rem] hidden lg:block"
           variants={fadeToRight}
         />
-        <motion.div className="absolute right-0" variants={fadeInToUp}>
+        <motion.div className="lg:absolute lg:right-0" variants={fadeInToUp}>
           <img src={SILVER_CARD} alt="SILVER_CARD" />
         </motion.div>
       </motion.div>
 
       <motion.div
-        className="flex justify-between relative mb-6 z-[9]"
+        className="flex flex-col-reverse lg:flex-row justify-between relative mb-10 lg:mb-6 z-[9]"
         variants={mainContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         <motion.div className="text-justWhite" variants={fadeToRight}>
-          <div className="flex items-center">
-            <p className="font-spacegrotesk font-medium text-[3.5rem]">
+          <div className="flex items-center justify-center lg:justify-start">
+            <p className="font-spacegrotesk font-medium text-[3.5rem] hidden lg:block">
+              <span className="text-[#FDBA5D]">GOLD</span> CARD
+            </p>
+            <p className="font-spacegrotesk font-medium text-[3rem] block lg:hidden">
               <span className="text-[#FDBA5D]">GOLD</span> CARD
             </p>
           </div>
-          <p className="py-2 text-base italic font-light font-inter">
+          <p className="py-2 text-base italic font-light font-inter text-center lg:text-left">
             Supply: 5,000 <br />
             Price: $160.00
             <br />
@@ -203,36 +211,44 @@ const Membership = () => {
             <br />
             split amongst Gold card members, and Discounts on NFT Mints.
           </p>
-          <a
-            href="/"
-            className="text-base italic font-medium font-inter leading-8 underline"
-          >
-            Mint Gold Card NFT
-          </a>
+          <div className="flex justify-center lg:justify-start">
+            <a
+              href="/"
+              className="text-base italic font-medium font-inter leading-8 underline"
+            >
+              Mint Gold Card NFT
+            </a>
+          </div>
         </motion.div>
         <motion.div
-          className="w-[450px] border-t border-white ml-4 mt-10 absolute left-[19rem]"
+          className="w-[450px] border-t border-white ml-4 mt-10 absolute left-[19rem] hidden lg:block"
           variants={fadeToRight}
         />
-        <motion.div className="absolute -top-8 right-0" variants={fadeInToUp}>
+        <motion.div
+          className="lg:absolute lg:-top-8 lg:right-0"
+          variants={fadeInToUp}
+        >
           <img src={GOLD_CARD} alt="GOLD_CARD" />
         </motion.div>
       </motion.div>
 
       <motion.div
-        className="flex justify-between relative mb-6 z-[8]"
+        className="flex flex-col-reverse lg:flex-row justify-between relative mb-10 lg:mb-6 z-[8]"
         variants={mainContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         <motion.div className="text-justWhite" variants={fadeToRight}>
-          <div className="flex items-center">
-            <p className="font-spacegrotesk font-medium text-[3.5rem]">
+          <div className="flex items-center justify-center lg:justify-start">
+            <p className="font-spacegrotesk font-medium text-[3.5rem] hidden lg:block">
+              <span className="text-[#1A569A]">DIAMOND</span> CARD
+            </p>
+            <p className="font-spacegrotesk font-medium text-[2.625rem] block lg:hidden">
               <span className="text-[#1A569A]">DIAMOND</span> CARD
             </p>
           </div>
-          <p className="py-2 text-base italic font-light font-inter">
+          <p className="py-2 text-base italic font-light font-inter text-center lg:text-left">
             Supply: 500 <br />
             Price: $800.00
             <br />
@@ -241,19 +257,21 @@ const Membership = () => {
             <br />
             split amongst Diamond card members, and Discounts on NFT Mints.
           </p>
-          <a
-            href="/"
-            className="text-base italic font-medium font-inter leading-8 underline"
-          >
-            Mint Diamond Card NFT
-          </a>
+          <div className="flex justify-center lg:justify-start">
+            <a
+              href="/"
+              className="text-base italic font-medium font-inter leading-8 underline"
+            >
+              Mint Diamond Card NFT
+            </a>
+          </div>
         </motion.div>
         <motion.div
-          className="w-[300px] border-t border-white ml-4 mt-10 absolute left-[25.5rem]"
+          className="w-[300px] border-t border-white ml-4 mt-10 absolute left-[25.5rem] hidden lg:block"
           variants={fadeToRight}
         />
         <motion.div
-          className="absolute right-0 -top-[5.5rem]"
+          className="lg:absolute lg:right-0 lg:-top-[5.5rem]"
           variants={fadeInToUp}
         >
           <img src={DIAMOND_CARD} alt="DIAMOND_CARD" />
@@ -261,19 +279,22 @@ const Membership = () => {
       </motion.div>
 
       <motion.div
-        className="flex justify-between relative mb-6 z-[7]"
+        className="flex flex-col-reverse lg:flex-row justify-between relative mb-10 lg:mb-6 z-[7]"
         variants={mainContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         <motion.div className="text-justWhite" variants={fadeToRight}>
-          <div className="flex items-center">
-            <p className="font-spacegrotesk font-medium text-[3.5rem]">
+          <div className="flex items-center justify-center lg:justify-start">
+            <p className="font-spacegrotesk font-medium text-[3.5rem] hidden lg:block">
+              <span className="text-[#505050]">BLACK</span> CARD
+            </p>
+            <p className="font-spacegrotesk font-medium text-[3rem] block lg:hidden">
               <span className="text-[#505050]">BLACK</span> CARD
             </p>
           </div>
-          <p className="py-2 text-base italic font-light font-inter">
+          <p className="py-2 text-base italic font-light font-inter text-center lg:text-left">
             Supply: 100
             <br />
             Price: $2,000.00 <br />
@@ -281,19 +302,21 @@ const Membership = () => {
             profit
             <br /> split amongst Black card members. and Discounts on NFT Mints.
           </p>
-          <a
-            href="/"
-            className="text-base italic font-medium font-inter leading-8 underline"
-          >
-            Mint Black Card NFT
-          </a>
+          <div className="flex justify-center lg:justify-start">
+            <a
+              href="/"
+              className="text-base italic font-medium font-inter leading-8 underline"
+            >
+              Mint Black Card NFT
+            </a>
+          </div>
         </motion.div>
         <motion.div
-          className="w-[430px] border-t border-white ml-4 mt-10 absolute left-[21rem]"
+          className="w-[430px] border-t border-white ml-4 mt-10 absolute left-[21rem] hidden lg:block"
           variants={fadeToRight}
         />
         <motion.div
-          className="absolute right-0 -top-[9rem]"
+          className="lg:absolute lg:right-0 lg:-top-[9rem]"
           variants={fadeInToUp}
         >
           <img src={BLACK_CARD} alt="BLACK_CARD" />
@@ -301,19 +324,22 @@ const Membership = () => {
       </motion.div>
 
       <motion.div
-        className="relative flex justify-between z-[6]"
+        className="relative flex flex-col-reverse lg:flex-row justify-between z-[6]"
         variants={mainContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         <motion.div className="text-justWhite" variants={fadeToRight}>
-          <div className="flex items-center">
-            <p className="font-spacegrotesk font-medium text-[3.5rem]">
+          <div className="flex items-center justify-center lg:justify-start">
+            <p className="font-spacegrotesk font-medium text-[3.5rem] hidden lg:block">
+              <span className="text-[#7D4BB9]">APEX</span> CARD
+            </p>
+            <p className="font-spacegrotesk font-medium text-[3rem] block lg:hidden">
               <span className="text-[#7D4BB9]">APEX</span> CARD
             </p>
           </div>
-          <p className="py-2 text-base italic font-light font-inter">
+          <p className="py-2 text-base italic font-light font-inter text-center lg:text-left">
             Supply: 20 <br />
             Price: $5,000.00
             <br />
@@ -322,19 +348,21 @@ const Membership = () => {
             <br />
             split amongst apex card members. Discounts on NFT Mints.
           </p>
-          <a
-            href="/"
-            className="text-base italic font-medium font-inter leading-8 underline"
-          >
-            Mint Apex Card NFT
-          </a>
+          <div className="flex justify-center lg:justify-start">
+            <a
+              href="/"
+              className="text-base italic font-medium font-inter leading-8 underline"
+            >
+              Mint Apex Card NFT
+            </a>
+          </div>
         </motion.div>
         <motion.div
-          className="w-[500px] border-t border-white ml-4 mt-10 absolute left-[19rem]"
+          className="w-[500px] border-t border-white ml-4 mt-10 absolute left-[19rem] hidden lg:block"
           variants={fadeToRight}
         />
         <motion.div
-          className="absolute right-0 -top-[12.5rem]"
+          className="lg:absolute lg:right-0 lg:-top-[12.5rem]"
           variants={fadeInToUp}
         >
           <img src={APEX_CARD} alt="APEX_CARD" />
@@ -342,7 +370,7 @@ const Membership = () => {
       </motion.div>
 
       <motion.p
-        className="text-justWhite font-spacegrotesk font-medium text-[3.5rem] text-center mt-[4.63rem]"
+        className="text-justWhite font-spacegrotesk font-medium text-[3.5rem] text-center mt-20 lg:mt-[4.63rem]"
         variants={fadeInToUpDelay}
         initial="hidden"
         whileInView="visible"
@@ -351,20 +379,24 @@ const Membership = () => {
         WHY MINT?
       </motion.p>
       <motion.div
-        className="flex justify-around items-center pb-[12.5rem] mt-9"
+        className="flex flex-col lg:flex-row justify-around items-center lg:pb-[12.5rem] mt-9"
         variants={whyMintContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         <motion.p
-          className="text-base font-light font-inter text-gold"
+          className="text-lg lg:text-base font-light font-inter text-gold"
           variants={fadeInToUp}
         >
           Exclusive members only games
         </motion.p>
         <motion.div
-          className="border-r border-white h-9"
+          className="border-r-[3px] border-white h-9 hidden lg:block"
+          variants={fadeInToUp}
+        />
+        <motion.div
+          className="my-10 border-b-4 border-white rounded-full w-10 block lg:hidden"
           variants={fadeInToUp}
         />
         <motion.p
@@ -374,7 +406,11 @@ const Membership = () => {
           Dedicated Community Channels
         </motion.p>
         <motion.div
-          className="border-r border-white h-9"
+          className="border-r-[3px] border-white h-9 hidden lg:block"
+          variants={fadeInToUp}
+        />
+        <motion.div
+          className="my-10 border-b-4 border-white rounded-full w-10 block lg:hidden"
           variants={fadeInToUp}
         />
         <motion.p
@@ -384,7 +420,11 @@ const Membership = () => {
           Monthly rewards by tier
         </motion.p>
         <motion.div
-          className="border-r border-white h-9"
+          className="border-r-[3px] border-white h-9 hidden lg:block"
+          variants={fadeInToUp}
+        />
+        <motion.div
+          className="my-10 border-b-4 border-white rounded-full w-10 block lg:hidden"
           variants={fadeInToUp}
         />
         <motion.p

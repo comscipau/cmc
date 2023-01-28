@@ -12,8 +12,11 @@ module.exports = {
       },
       backgroundImage: {
         hero_bg: "url('/src/assets/hero_bg.png')",
+        hero_bg_mobile: "url('/src/assets/BANNER_HERO_MOBILE.png')",
         gradient_bg: "url('/src/assets/gradient-bg.png')",
+        gradient_bg_mobile: "url('/src/assets/GRADIENT_BG_MOBILE.png')",
         gradient_footer: "url('/src/assets/gradient-footer.png')",
+        gradient_footer_mobile: "url('/src/assets/FOOTER_BG_MOBILE.png')",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

@@ -91,14 +91,14 @@ const Footer = () => {
 
   return (
     <motion.div
-      className="px-[8.81rem] pt-[6.5rem] bg-gradient_footer bg-cover bg-right-bottom"
+      className="lg:px-[8.81rem] lg:pt-[6.5rem] bg-gradient_footer_mobile bg-bottom pt-[10.75rem] lg:bg-gradient_footer bg-cover lg:bg-right-bottom"
       variants={mainContainer}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
     >
       <motion.div
-        className="flex justify-between pb-4 border-b-2 border-footerColor"
+        className="px-6 lg:px-0 flex justify-between pb-4 border-b-2 border-footerColor"
         variants={mainContainer}
         initial="hidden"
         whileInView="visible"
@@ -120,89 +120,128 @@ const Footer = () => {
       </motion.div>
 
       <motion.div
-        className="flex justify-end mt-[3.5rem]"
+        className="px-6 lg:px-0 flex justify-between lg:justify-end mt-[2.875rem] lg:mt-[3.5rem]"
         variants={linksContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         <motion.div
-          className="flex flex-col text-justWhite text-right mr-[4.81rem]"
+          className="flex flex-col text-justWhite text-left lg:text-right mr-4 lg:mr-[4.81rem]"
           variants={fadeInToUp}
         >
-          <p className="pb-[2.625rem] font-spacegrotesk text-base font-medium">
+          <p className="pb-4 lg:pb-[2.625rem] font-spacegrotesk text-xs lg:text-base font-medium">
             COMPANY
           </p>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             About Us
           </a>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Collabs
           </a>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Announcements
           </a>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Keep in touch
           </a>
         </motion.div>
 
         <motion.div
-          className="flex flex-col text-justWhite text-right mr-[10.63rem]"
+          className="flex flex-col text-justWhite text-left lg:text-right mr-4 lg:mr-[10.63rem]"
           variants={fadeInToUp}
         >
-          <p className="pb-[2.625rem] font-spacegrotesk text-base font-medium">
+          <p className="pb-4 lg:pb-[2.625rem] font-spacegrotesk text-xs lg:text-base font-medium">
             PRODUCTS
           </p>
-          <a href="/" className="pb-3 font-inter text-xs">
-            Gold Membership Card
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
+            Club Passes
           </a>
-          <a href="/" className="pb-3 font-inter text-xs">
-            Club Membership Card NFT
-          </a>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Club Sharks NFT
           </a>
         </motion.div>
 
         <motion.div
-          className="flex flex-col text-justWhite text-right mr-[8.94rem]"
+          className="flex flex-col text-justWhite text-left lg:text-right mr-4 lg:mr-[8.94rem]"
           variants={fadeInToUp}
         >
-          <p className="pb-[2.625rem] font-spacegrotesk text-base font-medium">
+          <p className="pb-4 lg:pb-[2.625rem] font-spacegrotesk text-xs lg:text-base font-medium">
             SOCIALS
           </p>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Twitter
           </a>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Discord
           </a>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Telegram
           </a>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Youtube
           </a>
         </motion.div>
 
         <motion.div
-          className="flex flex-col text-justWhite text-right"
+          className="flex flex-col text-justWhite text-left lg:text-right"
           variants={fadeInToUp}
         >
-          <p className="pb-[2.625rem] font-spacegrotesk text-base font-medium">
+          <p className="pb-4 lg:pb-[2.625rem] font-spacegrotesk text-xs lg:text-base font-medium">
             SUPPORT
           </p>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Disclaimer
           </a>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Privacy Policy
           </a>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Medium Articles
           </a>
-          <a href="/" className="pb-3 font-inter text-xs">
+          <a
+            href="/"
+            className="pb-5 lg:pb-3 font-inter text-[0.5rem] lg:text-xs"
+          >
             Whitepaper
           </a>
         </motion.div>
@@ -215,16 +254,17 @@ const Footer = () => {
         viewport={{ once: true }}
       >
         <motion.div
-          className="mt-[2.875rem] flex justify-end relative"
+          className="mt-[3.375rem] lg:mt-[2.875rem] flex justify-center lg:justify-end relative"
           variants={fadeToLeft}
         >
-          <div className="border-t-2 border-footerColor w-[82%] absolute top-6 left-0" />
+          <div className="border-t-2 border-footerColor w-[82%] absolute top-6 left-0 hidden lg:block" />
           <button className="text-white font-spacegrotesk font-bold text-base bg-gold py-[13px] px-[25px] rounded-[20px] border-[1px] border-gold radial-btn">
             Let's Collaborate
           </button>
         </motion.div>
+        <div className="border-t-2 border-footerColor w-full block lg:hidden mt-6 mb-4" />
         <motion.p
-          className="text-white font-spacegrotesk font-light text-base pb-[4.44rem] -mt-4"
+          className="text-white font-spacegrotesk font-light text-[0.5rem] lg:text-base lg:pb-[4.44rem] lg:-mt-4 text-center lg:text-left pb-4"
           variants={fadeToRight}
         >
           Copyright 2023 ClubMonteCarlo | All Rights Reserved.
