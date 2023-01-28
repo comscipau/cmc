@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="bg-justBlack">
+    <div className="bg-justBlack overflow-x-hidden">
       <Navbar />
       <Hero />
       <Membership />
