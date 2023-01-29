@@ -26,3 +26,7 @@
   border: 1px solid #ffb145;
   font-weight: 400;
 }
+
+html {
+  scroll-behavior: smooth;
+}

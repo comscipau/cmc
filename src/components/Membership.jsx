@@ -156,12 +156,12 @@ const Membership = () => {
 
             {/* <svg className="w-1/2 h-1 ml-4 absolute left-[21rem]">
               <polyline
-                className="stroke-white stroke-2 fill-none"
+                className="stroke-2 stroke-white fill-none"
                 points="0,0 350,0"
               ></polyline>
             </svg> */}
           </div>
-          <p className="py-2 text-base italic font-light font-inter text-center lg:text-left">
+          <p className="py-2 text-base italic font-light text-center font-inter lg:text-left">
             Supply: 1,000
             <br />
             Price: FREE
@@ -171,7 +171,7 @@ const Membership = () => {
           <div className="flex justify-center lg:justify-start">
             <a
               href="/"
-              className="text-base italic font-medium font-inter leading-8 underline"
+              className="text-base italic font-medium leading-8 underline font-inter"
             >
               Mint Silver Card NFT
             </a>
@@ -202,7 +202,7 @@ const Membership = () => {
               <span className="text-[#FDBA5D]">GOLD</span> CARD
             </p>
           </div>
-          <p className="py-2 text-base italic font-light font-inter text-center lg:text-left">
+          <p className="py-2 text-base italic font-light text-center font-inter lg:text-left">
             Supply: 5,000 <br />
             Price: $160.00
             <br />
@@ -214,7 +214,7 @@ const Membership = () => {
           <div className="flex justify-center lg:justify-start">
             <a
               href="/"
-              className="text-base italic font-medium font-inter leading-8 underline"
+              className="text-base italic font-medium leading-8 underline font-inter"
             >
               Mint Gold Card NFT
             </a>
@@ -248,7 +248,7 @@ const Membership = () => {
               <span className="text-[#1A569A]">DIAMOND</span> CARD
             </p>
           </div>
-          <p className="py-2 text-base italic font-light font-inter text-center lg:text-left">
+          <p className="py-2 text-base italic font-light text-center font-inter lg:text-left">
             Supply: 500 <br />
             Price: $800.00
             <br />
@@ -260,7 +260,7 @@ const Membership = () => {
           <div className="flex justify-center lg:justify-start">
             <a
               href="/"
-              className="text-base italic font-medium font-inter leading-8 underline"
+              className="text-base italic font-medium leading-8 underline font-inter"
             >
               Mint Diamond Card NFT
             </a>
@@ -294,7 +294,7 @@ const Membership = () => {
               <span className="text-[#505050]">BLACK</span> CARD
             </p>
           </div>
-          <p className="py-2 text-base italic font-light font-inter text-center lg:text-left">
+          <p className="py-2 text-base italic font-light text-center font-inter lg:text-left">
             Supply: 100
             <br />
             Price: $2,000.00 <br />
@@ -305,7 +305,7 @@ const Membership = () => {
           <div className="flex justify-center lg:justify-start">
             <a
               href="/"
-              className="text-base italic font-medium font-inter leading-8 underline"
+              className="text-base italic font-medium leading-8 underline font-inter"
             >
               Mint Black Card NFT
             </a>
@@ -339,7 +339,7 @@ const Membership = () => {
               <span className="text-[#7D4BB9]">APEX</span> CARD
             </p>
           </div>
-          <p className="py-2 text-base italic font-light font-inter text-center lg:text-left">
+          <p className="py-2 text-base italic font-light text-center font-inter lg:text-left">
             Supply: 20 <br />
             Price: $5,000.00
             <br />
@@ -351,7 +351,7 @@ const Membership = () => {
           <div className="flex justify-center lg:justify-start">
             <a
               href="/"
-              className="text-base italic font-medium font-inter leading-8 underline"
+              className="text-base italic font-medium leading-8 underline font-inter"
             >
               Mint Apex Card NFT
             </a>
@@ -386,7 +386,7 @@ const Membership = () => {
         viewport={{ once: true }}
       >
         <motion.p
-          className="text-lg lg:text-base font-light font-inter text-gold"
+          className="text-lg font-light lg:text-base font-inter text-gold"
           variants={fadeInToUp}
         >
           Exclusive members only games
@@ -396,7 +396,7 @@ const Membership = () => {
           variants={fadeInToUp}
         />
         <motion.div
-          className="my-10 border-b-4 border-white rounded-full w-10 block lg:hidden"
+          className="block w-10 my-10 border-b-4 border-white rounded-full lg:hidden"
           variants={fadeInToUp}
         />
         <motion.p
@@ -410,7 +410,7 @@ const Membership = () => {
           variants={fadeInToUp}
         />
         <motion.div
-          className="my-10 border-b-4 border-white rounded-full w-10 block lg:hidden"
+          className="block w-10 my-10 border-b-4 border-white rounded-full lg:hidden"
           variants={fadeInToUp}
         />
         <motion.p
@@ -424,7 +424,7 @@ const Membership = () => {
           variants={fadeInToUp}
         />
         <motion.div
-          className="my-10 border-b-4 border-white rounded-full w-10 block lg:hidden"
+          className="block w-10 my-10 border-b-4 border-white rounded-full lg:hidden"
           variants={fadeInToUp}
         />
         <motion.p

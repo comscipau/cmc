@@ -9,10 +9,11 @@ const Hero = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 2,
+        // delay: 2,
         duration: 0.5,
-        when: "beforeChildren",
-        staggerChildren: 1,
+        ease: "easeInOut",
+        // when: "beforeChildren",
+        // staggerChildren: 1,
       },
     },
   };
@@ -24,10 +25,11 @@ const Hero = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.5,
+        // delay: 0.5,
         duration: 0.5,
-        when: "beforeChildren",
-        staggerChildren: 1,
+        ease: "easeInOut",
+        // when: "beforeChildren",
+        // staggerChildren: 1,
       },
     },
   };
@@ -42,6 +44,7 @@ const Hero = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
+        ease: "easeInOut",
       },
     },
   };
@@ -50,14 +53,13 @@ const Hero = () => {
     hidden: {
       y: 50,
       opacity: 0,
-      zIndex: 0,
     },
     visible: {
       y: 0,
       opacity: 1,
-      zIndex: 100,
       transition: {
         duration: 0.5,
+        ease: "easeInOut",
       },
     },
   };
@@ -103,39 +105,42 @@ const Hero = () => {
         <motion.div
           className="flex flex-col items-center"
           variants={fadeInToUp}
-          // initial="hidden"
-          // whileInView="visible"
-          // viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
           <p className="font-spacegrotesk text-gold text-[4rem] font-bold">
             1,000+
           </p>
-          <p className="text-base lg:text-2xl font-normal font-inter text-justWhite">
+          <p className="text-base font-normal lg:text-2xl font-inter text-justWhite">
             Poker tournaments played
           </p>
         </motion.div>
         <motion.div
           className="flex flex-col items-center"
           variants={fadeInToUp}
-          // initial="hidden"
-          // whileInView="visible"
-          // viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
           <p className="font-spacegrotesk text-gold text-[4rem] font-bold">
             $10,000+
           </p>
-          <p className="text-base lg:text-2xl font-normal font-inter text-justWhite">
+          <p className="text-base font-normal lg:text-2xl font-inter text-justWhite">
             Distributed Shares
           </p>
         </motion.div>
         <motion.div
           className="flex flex-col items-center"
           variants={fadeInToUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
           <p className="font-spacegrotesk text-gold text-[4rem] font-bold">
             1,031+
           </p>
-          <p className="text-base lg:text-2xl font-normal font-inter text-justWhite">
+          <p className="text-base font-normal lg:text-2xl font-inter text-justWhite">
             Members and growing
           </p>
         </motion.div>
