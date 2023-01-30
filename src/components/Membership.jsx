@@ -16,36 +16,8 @@ const Membership = () => {
       transition: {
         duration: 0.5,
         when: "beforeChildren",
-        staggerChildren: 1,
-      },
-    },
-  };
-
-  const whyMintContainer = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 1.5,
-        duration: 0.5,
-        when: "beforeChildren",
-        staggerChildren: 0.5,
-      },
-    },
-  };
-
-  const cardsContainer = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        when: "beforeChildren",
-        staggerChildren: 0.5,
+        // staggerChildren: 0.5,
+        ease: "easeInOut",
       },
     },
   };
@@ -60,21 +32,7 @@ const Membership = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
-      },
-    },
-  };
-
-  const fadeInToUpDelay = {
-    hidden: {
-      y: 50,
-      opacity: 0,
-    },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        delay: 1,
-        duration: 0.5,
+        ease: "easeInOut",
       },
     },
   };
@@ -89,6 +47,7 @@ const Membership = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
+        ease: "easeInOut",
       },
     },
   };
@@ -96,7 +55,7 @@ const Membership = () => {
   return (
     <div className="w-full lg:pt-12 px-6 lg:px-[8.81rem] bg-gradient_bg_mobile lg:bg-gradient_bg bg-cover md:bg-top">
       <motion.div
-        variants={cardsContainer}
+        variants={mainContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -104,9 +63,9 @@ const Membership = () => {
         <motion.p
           className="font-spacegrotesk font-medium text-2xl lg:text-[4rem] text-white leading-none text-center mb-2 lg:mb-0"
           variants={fadeInToUp}
-          // initial="hidden"
-          // whileInView="visible"
-          // viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
           MINT OUR EXCLUSIVE
         </motion.p>
@@ -114,9 +73,9 @@ const Membership = () => {
         <motion.p
           className="font-spacegrotesk font-medium text-[2rem] lg:text-[4rem] text-gold leading-none text-center"
           variants={fadeInToUp}
-          // initial="hidden"
-          // whileInView="visible"
-          // viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
           CLUB MEMBERSHIP CARDS NFT
         </motion.p>
@@ -124,9 +83,9 @@ const Membership = () => {
         <motion.p
           className="font-inter text-base font-normal leading-8 text-justWhite text-center mt-8 pb-[7.81rem] hidden lg:block"
           variants={fadeInToUp}
-          // initial="hidden"
-          // whileInView="visible"
-          // viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
           Each of the tiers of memberships has the following benefits:
           <br />
@@ -181,7 +140,10 @@ const Membership = () => {
           className="w-[470px] border-t border-white ml-4 mt-10 absolute left-[21rem] hidden lg:block"
           variants={fadeToRight}
         />
-        <motion.div className="lg:absolute lg:right-0" variants={fadeInToUp}>
+        <motion.div
+          className="lg:absolute lg:right-0 md:mx-auto"
+          variants={fadeInToUp}
+        >
           <img src={SILVER_CARD} alt="SILVER_CARD" />
         </motion.div>
       </motion.div>
@@ -225,7 +187,7 @@ const Membership = () => {
           variants={fadeToRight}
         />
         <motion.div
-          className="lg:absolute lg:-top-8 lg:right-0"
+          className="lg:absolute lg:-top-8 lg:right-0 md:mx-auto"
           variants={fadeInToUp}
         >
           <img src={GOLD_CARD} alt="GOLD_CARD" />
@@ -271,7 +233,7 @@ const Membership = () => {
           variants={fadeToRight}
         />
         <motion.div
-          className="lg:absolute lg:right-0 lg:-top-[5.5rem]"
+          className="lg:absolute lg:right-0 lg:-top-[5.5rem] md:mx-auto"
           variants={fadeInToUp}
         >
           <img src={DIAMOND_CARD} alt="DIAMOND_CARD" />
@@ -316,7 +278,7 @@ const Membership = () => {
           variants={fadeToRight}
         />
         <motion.div
-          className="lg:absolute lg:right-0 lg:-top-[9rem]"
+          className="lg:absolute lg:right-0 lg:-top-[9rem] md:mx-auto"
           variants={fadeInToUp}
         >
           <img src={BLACK_CARD} alt="BLACK_CARD" />
@@ -362,7 +324,7 @@ const Membership = () => {
           variants={fadeToRight}
         />
         <motion.div
-          className="lg:absolute lg:right-0 lg:-top-[12.5rem]"
+          className="lg:absolute lg:right-0 lg:-top-[12.5rem] md:mx-auto"
           variants={fadeInToUp}
         >
           <img src={APEX_CARD} alt="APEX_CARD" />
@@ -371,7 +333,7 @@ const Membership = () => {
 
       <motion.p
         className="text-justWhite font-spacegrotesk font-medium text-[3.5rem] text-center mt-20 lg:mt-[4.63rem]"
-        variants={fadeInToUpDelay}
+        variants={fadeInToUp}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -380,7 +342,7 @@ const Membership = () => {
       </motion.p>
       <motion.div
         className="flex flex-col lg:flex-row justify-around items-center lg:pb-[12.5rem] mt-9"
-        variants={whyMintContainer}
+        variants={mainContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

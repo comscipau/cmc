@@ -3,21 +3,6 @@ import FOOTER_LOGO from "../assets/logosmall.png";
 import { motion } from "framer-motion";
 
 const Footer = () => {
-  const footerContainer = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 3,
-        duration: 1,
-        when: "beforeChildren",
-        staggerChildren: 1,
-      },
-    },
-  };
-
   const mainContainer = {
     hidden: {
       opacity: 0,
@@ -25,24 +10,10 @@ const Footer = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 1,
-        when: "beforeChildren",
-        staggerChildren: 1,
-      },
-    },
-  };
-
-  const linksContainer = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 2,
         duration: 0.5,
         when: "beforeChildren",
-        staggerChildren: 0.5,
+        ease: "easeInOut",
+        // staggerChildren: 1,
       },
     },
   };
@@ -57,6 +28,7 @@ const Footer = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
+        ease: "easeInOut",
       },
     },
   };
@@ -71,6 +43,7 @@ const Footer = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
+        ease: "easeInOut",
       },
     },
   };
@@ -85,6 +58,7 @@ const Footer = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
+        ease: "easeInOut",
       },
     },
   };
@@ -98,14 +72,14 @@ const Footer = () => {
       viewport={{ once: true }}
     >
       <motion.div
-        className="px-6 lg:px-0 flex justify-between pb-4 border-b-2 border-footerColor"
+        className="flex justify-between px-6 pb-4 border-b-2 lg:px-0 border-footerColor"
         variants={mainContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         <motion.p
-          className="font-spacegrotesk font-normal text-2xl"
+          className="text-2xl font-normal font-spacegrotesk"
           variants={fadeToRight}
         >
           <span className="text-gold">Club</span>
@@ -121,7 +95,7 @@ const Footer = () => {
 
       <motion.div
         className="px-6 lg:px-0 flex justify-between lg:justify-end mt-[2.875rem] lg:mt-[3.5rem]"
-        variants={linksContainer}
+        variants={mainContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -214,7 +188,7 @@ const Footer = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col text-justWhite text-left lg:text-right"
+          className="flex flex-col text-left text-justWhite lg:text-right"
           variants={fadeInToUp}
         >
           <p className="pb-4 lg:pb-[2.625rem] font-spacegrotesk text-xs lg:text-base font-medium">
@@ -248,7 +222,7 @@ const Footer = () => {
       </motion.div>
 
       <motion.div
-        variants={footerContainer}
+        variants={mainContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -262,7 +236,7 @@ const Footer = () => {
             Let's Collaborate
           </button>
         </motion.div>
-        <div className="border-t-2 border-footerColor w-full block lg:hidden mt-6 mb-4" />
+        <div className="block w-full mt-6 mb-4 border-t-2 border-footerColor lg:hidden" />
         <motion.p
           className="text-white font-spacegrotesk font-light text-[0.5rem] lg:text-base lg:pb-[4.44rem] lg:-mt-4 text-center lg:text-left pb-4"
           variants={fadeToRight}

@@ -66,7 +66,7 @@ const Hero = () => {
 
   return (
     <motion.div
-      className="px-6 lg:px-[8.81rem] pt-[4.875rem] lg:pt-[10.81rem] lg:-mt-12 bg-hero_bg_mobile lg:bg-hero_bg bg-contain bg-no-repeat lg:bg-cover bg-top z-[2] relative"
+      className="px-6 lg:px-[8.81rem] pt-[4.875rem] lg:pt-[10.81rem] lg:-mt-12 bg-hero_bg_mobile md:bg-hero_bg bg-contain bg-no-repeat md:bg-cover bg-top z-[2] relative"
       variants={heroContainer}
       initial="hidden"
       whileInView="visible"

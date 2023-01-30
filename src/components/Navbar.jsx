@@ -5,9 +5,9 @@ import Hamburger from "hamburger-react";
 import { useState } from "react";
 
 const Navbar = () => {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // React.useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   const [isOpen, setOpen] = useState(false);
 
